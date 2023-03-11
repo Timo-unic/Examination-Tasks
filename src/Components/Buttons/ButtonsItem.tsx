@@ -1,5 +1,5 @@
-import { Button, Card, CardActions } from "@mui/material"
-import { useState } from "react"
+import { Button, Card, CardActions } from '@mui/material'
+import { useState } from 'react'
 
 type Props = {
     title: string
@@ -9,24 +9,20 @@ type Props = {
     item: number
 }
 
-const ButtonsItem = ({
-    title,
-    description,
-    price,
-    currency,
-    item,
-}: Props) => {
+const ButtonsItem = ({ title, description, price, currency, item }: Props) => {
     const [count, setCount] = useState<number>(0)
     const counterClickBtn = () => {
         setCount(count + 1)
     }
-  return (
-    <Card variant="outlined">
+    return (
+        <Card variant="outlined">
             <CardActions>
-                <Button variant="outlined" onClick={() => counterClickBtn()}>change count({count})</Button>
+                <Button variant="outlined" onClick={() => counterClickBtn()}>
+                    change count({count})
+                </Button>
             </CardActions>
         </Card>
-  )
+    )
 }
 
 export default ButtonsItem

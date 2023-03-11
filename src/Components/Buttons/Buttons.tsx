@@ -13,11 +13,10 @@ type ProductProps = {
 }
 
 const Buttons = (props: Props) => {
-
     return (
         <>
             <Typography
-                variant="h3"
+                variant="h4"
                 component="div"
                 sx={{
                     margin: '50px 0 20px 15px',
