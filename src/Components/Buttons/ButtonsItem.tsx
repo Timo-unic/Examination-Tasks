@@ -5,11 +5,10 @@ type Props = {
     title: string
     description: string
     price: number
-    currency: string
     item: number
 }
 
-const ButtonsItem = ({ title, description, price, currency, item }: Props) => {
+const ButtonsItem = ({ title, description, price, item }: Props) => {
     const [count, setCount] = useState<number>(0)
     const counterClickBtn = () => {
         setCount(count + 1)

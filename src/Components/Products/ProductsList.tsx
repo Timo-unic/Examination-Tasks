@@ -9,7 +9,6 @@ type ProductProps = {
     title: string
     description: string
     price: number
-    currency: string
     item: number
 }
 
@@ -76,7 +75,6 @@ const ProductsList = (Props: Props) => {
                             title={product.title}
                             description={product.description}
                             price={product.price}
-                            currency={product.currency}
                             item={product.item}
                             currencyValue={currencyValue}
                             addProductToTotal={addProductToTotal}

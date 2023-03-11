@@ -8,7 +8,6 @@ type ProductProps = {
     title: string
     description: string
     price: number
-    currency: string
     item: number
 }
 
@@ -33,7 +32,6 @@ const Buttons = (props: Props) => {
                             title={product.title}
                             description={product.description}
                             price={product.price}
-                            currency={product.currency}
                             item={product.item}
                         />
                     </Grid>

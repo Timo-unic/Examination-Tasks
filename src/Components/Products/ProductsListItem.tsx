@@ -5,7 +5,6 @@ type Props = {
     title: string
     description: string
     price: number
-    currency: string
     item: number
     currencyValue: {
         currName: string
@@ -21,7 +20,6 @@ const ProductsListItem = ({
     title,
     description,
     price,
-    currency,
     item,
     currencyValue,
     addProductToTotal,
